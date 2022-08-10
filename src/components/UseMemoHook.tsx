@@ -15,6 +15,7 @@ function UseMemoHook() {
   }, [number]);
 
   const [colored, setColored] = useState(false);
+
   const styles = useMemo(() => {
     return { color: colored ? "darkred" : "red" };
   }, [colored]);

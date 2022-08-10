@@ -23,7 +23,9 @@ function UseRefHook() {
 
   return (
     <div>
-      <h1>Количество рендеров: {renderCount.current}</h1>
+      <h1 className="text-primary">UseRef </h1>
+
+      <h2>Количество рендеров: {renderCount.current}</h2>
       <h2>Прошлое состояние: {prevValue.current}</h2>
 
       <input

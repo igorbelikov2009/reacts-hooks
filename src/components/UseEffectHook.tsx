@@ -37,7 +37,9 @@ function UseEffectHook() {
 
   return (
     <div>
-      <h1>Ресурс {type} </h1>
+      <h1 className="text-primary">UseEffect </h1>
+
+      <h2>Ресурс {type} </h2>
 
       <button onClick={() => setType("users")}>Пользователи</button>
       <button onClick={() => setType("todos")}>Todos</button>
