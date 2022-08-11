@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import ItemsList from "../examples/ItemsList";
 
-function UseCalback() {
+function UseCallbackHook() {
   const [colored, setColored] = useState(false);
   const [count, setCount] = useState(1);
 
@@ -42,4 +42,4 @@ function UseCalback() {
   );
 }
 
-export default UseCalback;
+export default UseCallbackHook;
