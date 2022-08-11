@@ -41,7 +41,9 @@ function UseStateHook() {
   return (
     <div>
       <h1 className="text-primary"> UseState</h1>
+
       <h2>Счётчик {counter} </h2>
+
       <button onClick={increment} className="btn btn-success">
         Добавить
       </button>
