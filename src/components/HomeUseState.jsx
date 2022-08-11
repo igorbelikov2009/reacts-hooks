@@ -5,7 +5,7 @@ function computeInitialCounter() {
   return Math.trunc(Math.random() * 20);
 }
 
-function UseStateHook() {
+function HomeUseState() {
   // const [counter, setCounter] = useState(0);
   // const [counter, setCounter] = useState(computeInitialCounter());
   const [counter, setCounter] = useState(() => {
@@ -39,25 +39,27 @@ function UseStateHook() {
   }
 
   return (
-    <div>
-      <h1 className="text-primary"> UseState</h1>
+    <div className="container">
+      <div className="main">
+        <h1 className="text-primary">Домашняя страница: UseState</h1>
 
-      <h2>Счётчик {counter} </h2>
+        <h2>Счётчик {counter} </h2>
 
-      <button onClick={increment} className="btn btn-success">
-        Добавить
-      </button>
-      <button onClick={decrement} className="btn btn-danger">
-        Убрать
-      </button>
+        <button onClick={increment} className="btn btn-success">
+          Добавить
+        </button>
+        <button onClick={decrement} className="btn btn-danger">
+          Убрать
+        </button>
 
-      <button onClick={updateTitle} className="btn btn-light">
-        Изменить
-      </button>
+        <button onClick={updateTitle} className="btn btn-light">
+          Изменить
+        </button>
 
-      <pre>{JSON.stringify(state, null, 2)}</pre>
+        <pre>{JSON.stringify(state, null, 2)}</pre>
+      </div>
     </div>
   );
 }
 
-export default UseStateHook;
+export default HomeUseState;

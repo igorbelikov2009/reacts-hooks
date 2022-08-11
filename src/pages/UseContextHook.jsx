@@ -6,11 +6,13 @@ import AlertProvider from "../alert/AlertContext";
 function UseContextHook() {
   return (
     <AlertProvider>
-      <div>
-        <h1 className="text-primary">UseContext</h1>
-        <Alert />
+      <div className="container">
+        <div className="main">
+          <h1 className="text-primary">UseContext</h1>
+          <Alert />
 
-        <Main />
+          <Main />
+        </div>
       </div>
     </AlertProvider>
   );
