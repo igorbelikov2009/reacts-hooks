@@ -23,23 +23,21 @@ function UseRefHook() {
 
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-primary">UseRef </h1>
+      <h1 className="text-primary">UseRef </h1>
 
-        <h2>Количество рендеров: {renderCount.current}</h2>
-        <h2>Прошлое состояние: {prevValue.current}</h2>
+      <h2>Количество рендеров: {renderCount.current}</h2>
+      <h2>Прошлое состояние: {prevValue.current}</h2>
 
-        <input
-          ref={inputRef}
-          type="text"
-          onChange={(e) => setValue(e.target.value)}
-          value={value}
-        />
+      <input
+        ref={inputRef}
+        type="text"
+        onChange={(e) => setValue(e.target.value)}
+        value={value}
+      />
 
-        <button className="btn btn-success" onClick={focus}>
-          Фокус
-        </button>
-      </div>
+      <button className="btn btn-success" onClick={focus}>
+        Фокус
+      </button>
     </div>
   );
 }

@@ -20,26 +20,24 @@ function UseCallbackHook() {
 
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-primary">UseCallback</h1>
-        <h2 style={styles}>Количество элементов {count} </h2>
+      <h1 className="text-primary">UseCallback</h1>
+      <h2 style={styles}>Количество элементов {count} </h2>
 
-        <button
-          className="btn btn-success"
-          onClick={() => setCount((prev) => prev + 1)}
-        >
-          Добавить
-        </button>
+      <button
+        className="btn btn-success"
+        onClick={() => setCount((prev) => prev + 1)}
+      >
+        Добавить
+      </button>
 
-        <button
-          className="btn btn-warning"
-          onClick={() => setColored((prev) => !prev)}
-        >
-          Изменить
-        </button>
+      <button
+        className="btn btn-warning"
+        onClick={() => setColored((prev) => !prev)}
+      >
+        Изменить
+      </button>
 
-        <ItemsList getItems={generateItemsFromAPI} />
-      </div>
+      <ItemsList getItems={generateItemsFromAPI} />
     </div>
   );
 }

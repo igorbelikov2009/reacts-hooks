@@ -4,11 +4,9 @@ import { Link } from "react-router-dom";
 const NotFoundPage = () => {
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-danger">
-          Этой страницы не существует. Иди домой <Link to="/">home</Link>
-        </h1>
-      </div>
+      <h1 className="text-danger">
+        Этой страницы не существует. Иди домой <Link to="/">home</Link>
+      </h1>
     </div>
   );
 };

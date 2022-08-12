@@ -37,18 +37,16 @@ function UseEffectHook() {
 
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-primary">UseEffect </h1>
+      <h1 className="text-primary">UseEffect </h1>
 
-        <h2>Ресурс {type} </h2>
+      <h2>Ресурс {type} </h2>
 
-        <button onClick={() => setType("users")}>Пользователи</button>
-        <button onClick={() => setType("todos")}>Todos</button>
-        <button onClick={() => setType("posts")}>Посты</button>
+      <button onClick={() => setType("users")}>Пользователи</button>
+      <button onClick={() => setType("todos")}>Todos</button>
+      <button onClick={() => setType("posts")}>Посты</button>
 
-        {/* <pre>{JSON.stringify(data, null, 2)} </pre> */}
-        <pre>{JSON.stringify(pos, null, 2)} </pre>
-      </div>
+      {/* <pre>{JSON.stringify(data, null, 2)} </pre> */}
+      <pre>{JSON.stringify(pos, null, 2)} </pre>
     </div>
   );
 }

@@ -7,12 +7,10 @@ function UseContextHook() {
   return (
     <AlertProvider>
       <div className="container">
-        <div className="main">
-          <h1 className="text-primary">UseContext</h1>
-          <Alert />
+        <h1 className="text-primary">UseContext</h1>
+        <Alert />
 
-          <Main />
-        </div>
+        <Main />
       </div>
     </AlertProvider>
   );

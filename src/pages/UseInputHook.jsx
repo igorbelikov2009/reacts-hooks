@@ -30,21 +30,19 @@ function UseInputHook() {
 
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-primary">Кастомный хук: UseInput</h1>
-        {/* <input type="text" value={input.value} onChange={input.onChange} /> */}
-        <input type="text" {...input.bind} />
-        <input type="text" {...lastName.bind} />
+      <h1 className="text-primary">Кастомный хук: UseInput</h1>
+      {/* <input type="text" value={input.value} onChange={input.onChange} /> */}
+      <input type="text" {...input.bind} />
+      <input type="text" {...lastName.bind} />
 
-        <button className="btn btn-warning" onClick={() => allInputsCleaner()}>
-          Очистить
-        </button>
+      <button className="btn btn-warning" onClick={() => allInputsCleaner()}>
+        Очистить
+      </button>
 
-        <hr />
-        <h3>
-          {input.value} {lastName.value}
-        </h3>
-      </div>
+      <hr />
+      <h3>
+        {input.value} {lastName.value}
+      </h3>
     </div>
   );
 }

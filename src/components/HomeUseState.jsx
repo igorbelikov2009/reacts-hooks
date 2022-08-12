@@ -40,24 +40,22 @@ function HomeUseState() {
 
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-primary">Домашняя страница: UseState</h1>
+      <h1 className="text-primary">Домашняя страница: UseState</h1>
 
-        <h2>Счётчик {counter} </h2>
+      <h2>Счётчик {counter} </h2>
 
-        <button onClick={increment} className="btn btn-success">
-          Добавить
-        </button>
-        <button onClick={decrement} className="btn btn-danger">
-          Убрать
-        </button>
+      <button onClick={increment} className="btn btn-success">
+        Добавить
+      </button>
+      <button onClick={decrement} className="btn btn-danger">
+        Убрать
+      </button>
 
-        <button onClick={updateTitle} className="btn btn-light">
-          Изменить
-        </button>
+      <button onClick={updateTitle} className="btn btn-light">
+        Изменить
+      </button>
 
-        <pre>{JSON.stringify(state, null, 2)}</pre>
-      </div>
+      <pre>{JSON.stringify(state, null, 2)}</pre>
     </div>
   );
 }

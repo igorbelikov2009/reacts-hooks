@@ -8,6 +8,7 @@ const Main = () => {
   return (
     <>
       <h1>Привет в примере c Context</h1>
+
       <button onClick={toggle} className="btn btn-success">
         Показать alert
       </button>

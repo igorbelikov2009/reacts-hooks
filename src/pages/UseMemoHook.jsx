@@ -26,32 +26,30 @@ function UseMemoHook() {
 
   return (
     <div className="container">
-      <div className="main">
-        <h1 className="text-primary">useMemo</h1>
+      <h1 className="text-primary">useMemo</h1>
 
-        <h2 style={styles}>Вычисляемое свойство {computed}</h2>
+      <h2 style={styles}>Вычисляемое свойство {computed}</h2>
 
-        <button
-          className={"btn btn-success"}
-          onClick={() => setNumber((prev) => prev + 1)}
-        >
-          Добавить
-        </button>
+      <button
+        className={"btn btn-success"}
+        onClick={() => setNumber((prev) => prev + 1)}
+      >
+        Добавить
+      </button>
 
-        <button
-          className={"btn btn-danger"}
-          onClick={() => setNumber((prev) => prev - 1)}
-        >
-          Уменьшить
-        </button>
+      <button
+        className={"btn btn-danger"}
+        onClick={() => setNumber((prev) => prev - 1)}
+      >
+        Уменьшить
+      </button>
 
-        <button
-          className={"btn btn-warning"}
-          onClick={() => setColored((prev) => !prev)}
-        >
-          Изменить цвет заголовка
-        </button>
-      </div>
+      <button
+        className={"btn btn-warning"}
+        onClick={() => setColored((prev) => !prev)}
+      >
+        Изменить цвет заголовка
+      </button>
     </div>
   );
 }
