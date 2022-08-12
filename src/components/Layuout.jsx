@@ -10,6 +10,10 @@ const Layuout = () => {
             Home-State
           </Link>
 
+          <Link className="link" to="/counter">
+            UseCounter
+          </Link>
+
           <Link className="link" to="/callback">
             Callback
           </Link>

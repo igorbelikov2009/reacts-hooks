@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomeUseState from "../components/HomeUseState";
+import HomeUseStateCopy from "../pages/HomeUseStateCopy";
 import NotFoundPage from "../pages/NotFoundPage";
 import UseCallbackHook from "../pages/UseCalllbackHook";
 import UseContextHook from "../pages/UseContextHook";
@@ -17,6 +18,7 @@ const Navbar = () => {
       <Routes>
         <Route path="/" element={<Layuout />}>
           <Route index element={<HomeUseState />} />
+          <Route path="counter" element={<HomeUseStateCopy />} />
           <Route path="callback" element={<UseCallbackHook />} />
           <Route path="context" element={<UseContextHook />} />
           <Route path="effect" element={<UseEffectHook />} />

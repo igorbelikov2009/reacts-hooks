@@ -50,3 +50,7 @@ code {
   cursor: pointer;
   background-color: #eee;
 }
+
+.block {
+  padding: 3rem 0;
+}
