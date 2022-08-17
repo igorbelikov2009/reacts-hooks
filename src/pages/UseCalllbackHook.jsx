@@ -34,7 +34,7 @@ function UseCallbackHook() {
         className="btn btn-warning"
         onClick={() => setColored((prev) => !prev)}
       >
-        Изменить
+        Изменить цвет заголовка
       </button>
 
       <ItemsList getItems={generateItemsFromAPI} />

@@ -14,7 +14,7 @@ function UseEffectHook() {
       .then((json) => setData(json));
 
     return () => {
-      console.log("cleaner");
+      // console.log("cleaner");
     };
   }, [type]); // мы следим за изменением [type]
 
@@ -26,7 +26,7 @@ function UseEffectHook() {
   };
 
   useEffect(() => {
-    console.log("ComponentsDidMount");
+    // console.log("ComponentsDidMount");
 
     window.addEventListener("mousemove", mouseMoveHandler);
 
@@ -45,7 +45,7 @@ function UseEffectHook() {
       <button onClick={() => setType("todos")}>Todos</button>
       <button onClick={() => setType("posts")}>Посты</button>
 
-      {/* <pre>{JSON.stringify(data, null, 2)} </pre> */}
+      <pre>{JSON.stringify(data, null, 2)} </pre>
       <pre>{JSON.stringify(pos, null, 2)} </pre>
     </div>
   );

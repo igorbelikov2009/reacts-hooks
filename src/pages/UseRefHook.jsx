@@ -1,45 +1,47 @@
-// import UseEffectHook from "./components/UseEffectHook.tsx";
 import React, { useEffect, useRef, useState } from "react";
 
-function UseRefHook() {
-  // const [renderCount, setRenderCount] = useState(1);
+const UseRefHook = () => {
   const [value, setValue] = useState("initial");
   const renderCount = useRef(1);
   const inputRef = useRef(null);
   const prevValue = useRef("");
-
-  function focus() {
-    inputRef.current.focus();
-  }
 
   useEffect(() => {
     renderCount.current++;
     console.log(inputRef.current.value);
   });
 
+  const focus = () => {
+    inputRef.current.focus();
+  };
+
   useEffect(() => {
     prevValue.current = value;
   }, [value]);
 
   return (
-    <div className="container">
-      <h1 className="text-primary">UseRef </h1>
+    <div>
+      <h1>Количество рендеров: {renderCount.current}</h1>
 
-      <h2>Количество рендеров: {renderCount.current}</h2>
-      <h2>Прошлое состояние: {prevValue.current}</h2>
+      <h5>Текущее состояние: </h5>
+      <h3>{value}</h3>
+
+      <h5>Предыдущее состояние: </h5>
+      <h3>{prevValue.current}</h3>
 
       <input
         ref={inputRef}
         type="text"
-        onChange={(e) => setValue(e.target.value)}
         value={value}
+        onChange={(e) => setValue(e.target.value)}
       />
 
       <button className="btn btn-success" onClick={focus}>
-        Фокус
+        Focuc
       </button>
     </div>
   );
-}
+};
 
 export default UseRefHook;
+// ключевое понимание useRef - он не вызывает рендер
