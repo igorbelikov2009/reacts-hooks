@@ -6,7 +6,7 @@ function UseCallbackHook() {
   const [count, setCount] = useState(1);
 
   const styles = {
-    color: colored ? "darkred" : "black",
+    color: colored ? "red" : "blue",
   };
 
   const generateItemsFromAPI = useCallback(
@@ -43,3 +43,7 @@ function UseCallbackHook() {
 }
 
 export default UseCallbackHook;
+// UseCallback нужен для того, чтобы функция не изменялась при новом рендере.
+// Функция как бы кэшировалась, что бы у нас не было рекурсивных вызовов и,
+// дополнительных сторонних проблем
+//
